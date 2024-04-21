@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puneeth S - Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e2830e3ef1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <div id="header">
+    <div class="container">
+        <nav>
+            <img src="puni..png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul> 
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full Stack Developer</p>
+            <h1>Hi, I'm <span>Puneeth S</span><br> from <span>India</span></h1>
+        </div>
+    </div>
+ </div>   
+<!-- ---------About--------- -->
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="profile.jpg" alt="Puni here">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p> Motivated to continually refine my skills and advance professionally. I am confident in my capability to
+                    generate creative ideas and offer effective solutions. Seeking opportunities as a fresher to apply and further
+                    develop my knowledge in Java, MySQL and progress from core to advanced Java development.
+                </p>
+
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Java</span><br>Backend Development</li>
+                        <li><span>HTML/CSS</span><br>Web development</li>
+                        <li><span>SQL</span><br>Database Management</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Java & Python Full Stack Development and Testing</span><br>KODNEST Technologies</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020 - 2023</span><br>71%    Bachelor of Engineering</li>
+                        <li><span>2015 - 2018</span><br>61.65%    Diploma</li>
+                        <li><span>2015</span><br>71.36%    SSLC</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            </div>
+        </div>
+    </div>
+ </div> 
+ <!-- -------Services-------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Creative and software engineering/programming skills to 
+                    design, build and improve websites.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-sketch"></i>
+                <h2>Backend Development</h2>
+                <p>The entire process of defining requirements, 
+                    visualizing and creating graphics including illustrations, logos, 
+                    layouts.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-film"></i>
+                <h2>Video Editing</h2>
+                <p>Technical and creative abilities 
+                    to be able to effectively create the vision clients have in mind.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- ----------Portfolio---------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="myWork-1.png">
+                <div class="layer">
+                    <h3>Tune Hub app</h3>
+                    <p>Designed and developed a music web application.
+                        <br>
+                        Integrated with secured payment.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="" alt="My work-2">
+            </div>
+            <div class="work">
+                <img src="" alt="My work-3">
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- --------contact------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> puniths1999@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 9591284693</p>
+                <div class="social-icon">
+                    <a href="https://www.linkedin.com/in/puneeth-s-357661172/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/punith_achar/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/punith.achar.9"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/Puneeths17"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="PUNEETH-S-CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="8" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg">hello</span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2022 Puneeth S. All rights reserved</p>
+    </div>
+</div>
+
+ <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+ </script>
+
+ <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+ </script>
+ <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz7v07MmFInELkQ9sPDXHs0Grwu9DhpLnwVCngiB7PJ_Tfrdomr0Oxf2k8kxKI82shh/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
