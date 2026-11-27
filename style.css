@@ -1,390 +1,379 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    font-family: 'Times New Roman', Times, serif;
-    box-sizing: border-box;
-}
-html{
-    scroll-behavior: smooth;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Puneeth S, Junior Developer in Chennai building business applications, workflow automation and integrations with Zoho Creator, Deluge, Zoho CRM, JavaScript and REST APIs.">
+    <meta name="theme-color" content="#0b0f1a">
+    <title>Puneeth S | Zoho Creator &amp; Business Application Developer, Chennai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e2830e3ef1.js" crossorigin="anonymous"></script>
+</head>
+<body>
 
-body{
-    background: #000000;
-    color: #fff;
-}
-#header{
-    width: 100%;
-    height: 100vh;
-    background-image: url(Background.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.container{
-    padding: 10px 10%;
-}
+<header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+        <a href="#top" class="brand">PS<span>.</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+</header>
 
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
+<main>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container hero-inner">
+            <p class="eyebrow">Junior Developer <span>·</span> Business Applications &amp; Web Development</p>
+            <h1>Hi, I'm <span class="accent">Puneeth S</span>.</h1>
+            <p class="hero-lead">
+                I build business applications, workflow automation and integrations by connecting
+                backend logic, databases, APIs and JavaScript interfaces. Working across the Zoho
+                ecosystem at Synprosoft IT Services in Chennai, and open to Zoho developer and
+                junior full-stack opportunities.
+            </p>
+            <div class="hero-tags">
+                <span>Zoho Creator</span><span>Deluge</span><span>Zoho CRM</span><span>JavaScript</span><span>REST APIs</span><span>SQL</span>
+            </div>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">See my projects</a>
+                <a href="#contact" class="btn btn-ghost">Get in touch</a>
+                <a href="PUNEETH-S-CV.pdf" download class="btn btn-ghost">Download CV</a>
+            </div>
+        </div>
+    </section>
 
-.logo{
-    width: 140px;
-}
+    <!-- About -->
+    <section class="section" id="about">
+        <div class="container about-grid">
+            <div class="about-photo">
+                <img src="profile.jpg" alt="Portrait of Puneeth S" onerror="this.style.display='none'; this.parentElement.classList.add('photo-placeholder');">
+                <span class="photo-initials" aria-hidden="true">PS</span>
+            </div>
+            <div class="about-text">
+                <h2 class="section-title"><span class="num">01</span> About me</h2>
+                <p>
+                    I'm a Junior Developer at Synprosoft IT Services, with a Mechanical Engineering
+                    background (BE, 2023) and a growing focus on software development. My day-to-day work spans
+                    low-code application development, backend workflows, JavaScript-based widgets,
+                    integrations and data management.
+                </p>
+                <p>
+                    I enjoy taking a business requirement, understanding the data and process behind it,
+                    and turning it into a working application. I'm especially interested in the space
+                    where backend services, APIs and frontend experiences come together.
+                </p>
+                <div class="stats">
+                    <div><strong>2026</strong><span>Started professional developer role</span></div>
+                    <div><strong>4</strong><span>Individual projects covered here</span></div>
+                    <div><strong>Full-stack</strong><span>Development direction</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
-}
+    <!-- Experience & Education -->
+    <section class="section alt" id="experience">
+        <div class="container">
+            <h2 class="section-title"><span class="num">02</span> Experience &amp; education</h2>
+            <div class="timeline-grid">
+                <div>
+                    <h3 class="sub-heading">Professional experience</h3>
+                    <div class="timeline">
+                        <article class="timeline-item">
+                            <span class="period">May 2026 — Present</span>
+                            <h4>Junior Developer</h4>
+                            <p class="org">Synprosoft IT Services</p>
+                            <ul class="detail-list">
+                                <li>Developing business applications and workflow automation using Zoho Creator and Deluge.</li>
+                                <li>Building and maintaining forms, lookup relationships, subforms, reports, dashboards, approval flows and Deluge workflows.</li>
+                                <li>Developing JavaScript-powered widgets that connect application interfaces with Creator data.</li>
+                                <li>Connecting Creator event workflows with Zoho Cliq using webhook-based notifications.</li>
+                                <li>Working with Zoho CRM, Cliq and Analytics concepts, alongside API, JSON and integration learning.</li>
+                                <li>Debugging application workflows and validating changes while protecting existing working modules.</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="sub-heading">Education</h3>
+                    <div class="timeline">
+                        <article class="timeline-item">
+                            <span class="period">2020 — 2023</span>
+                            <h4>Bachelor of Engineering</h4>
+                            <p class="org">Mechanical Engineering · 71%</p>
+                        </article>
+                        <article class="timeline-item">
+                            <span class="period">2015 — 2018</span>
+                            <h4>Diploma</h4>
+                            <p class="org">61.65%</p>
+                        </article>
+                        <article class="timeline-item">
+                            <span class="period">2015</span>
+                            <h4>SSLC</h4>
+                            <p class="org">71.36%</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-nav ul li a{
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 14px;
-    position: relative;
-}
+    <!-- Skills -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title"><span class="num">03</span> Technical skills</h2>
+            <p class="section-intro">Technologies I use in projects and actively develop through hands-on work.</p>
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <i class="fa-solid fa-cubes"></i>
+                    <h3>Zoho Development</h3>
+                    <p>Building business applications, forms, reports, workflows and role-based processes.</p>
+                    <div class="chips"><span>Zoho Creator</span><span>Deluge</span><span>Zoho CRM</span><span>Zoho Cliq</span><span>Zoho Analytics</span></div>
+                </article>
+                <article class="skill-card">
+                    <i class="fa-brands fa-js"></i>
+                    <h3>Frontend Development</h3>
+                    <p>Creating responsive interfaces and interactive widgets that communicate with backend data.</p>
+                    <div class="chips"><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>DOM</span><span>Responsive UI</span></div>
+                </article>
+                <article class="skill-card">
+                    <i class="fa-solid fa-server"></i>
+                    <h3>Backend &amp; Integration</h3>
+                    <p>Implementing application logic, handling data exchange and connecting services.</p>
+                    <div class="chips"><span>Deluge Logic</span><span>REST APIs</span><span>JSON</span><span>Webhooks</span></div>
+                </article>
+                <article class="skill-card">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>Databases &amp; Data</h3>
+                    <p>Working with structured records, lookups, subforms, relationships and queries.</p>
+                    <div class="chips"><span>SQL</span><span>MySQL fundamentals</span><span>Data Modelling</span><span>Relationships</span></div>
+                </article>
+                <article class="skill-card">
+                    <i class="fa-brands fa-java"></i>
+                    <h3>Programming Fundamentals</h3>
+                    <p>Building a stronger foundation in programming, object-oriented design and problem solving.</p>
+                    <div class="chips"><span>Core Java</span><span>OOP</span><span>Debugging</span><span>Clean Code</span></div>
+                </article>
+                <article class="skill-card">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <h3>Development Practices</h3>
+                    <p>Breaking requirements into modules, testing changes and maintaining existing functionality.</p>
+                    <div class="chips"><span>Git / GitHub</span><span>Debugging</span><span>Testing</span><span>Documentation</span></div>
+                </article>
+            </div>
+            <p class="skill-note">Skill levels are evolving through practical project work; this list does not imply expert-level proficiency in every technology.</p>
+        </div>
+    </section>
 
-nav ul li a::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #fe0000;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-nav ul li a:hover::after{
-    width: 100%;
-}
+    <!-- Projects -->
+    <section class="section alt" id="projects">
+        <div class="container">
+            <h2 class="section-title"><span class="num">04</span> Projects</h2>
+            <p class="section-intro">Individual projects and what I personally built, configured or debugged in each.</p>
 
-.header-text{
-    margin-top: 20%;
-    font-size: 30px
-}
-.header-text h1{
-    font-size: 60px;
-    margin-top: 20px;
-}
-.header-text h1 span{
-    color: rgb(243, 10, 10);
-}
-/* ----about----- */
-#about{
-    padding: 80px 0;
-    color: #ababab;
-}
-.row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.about-col-1{
-    flex-basis: 35%;
-}
-.about-col-1 img{
-    width: 100%;
-    border-radius: 15px;
-}
-.about-col-2{
-    flex-basis: 60%;
-}
-.sub-title{
-    font-size: 60px;
-    font-weight: 600;
-    color: #fff;
-}
-.tab-title{
-    display: flex;
-    margin: 20px 0 40px;
-}
-.tab-links{
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-}
-.tab-links::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #ff0000;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: .5s;
-}
-.tab-links.active-link::after{
-    width: 50%;
-}
-.tab-contents ul li{
-    list-style: none;
-    margin: 10px 0;
-}
-.tab-contents ul li span{
-    color: #ff0000;
-    font-size: 14px;
-}
-.tab-contents{
-    display: none;
-}
-.tab-contents.active-tab{
-    display: block;
-}
+            <div class="projects-list">
 
-/* -------Services------ */
-#services{
-    padding: 30px 0;
-}
-.services-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-.services-list div{
-    background: #262626;
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 10px;
-    transition: all, transform 0.5s;
-}
-.services-list div i{
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-.services-list div h2{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-.services-list div a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
-}
-.services-list div:hover{
-    background: #0408ff;
-    transform: translateY(-10px);
-}
+                <article class="project-card">
+                    <div class="project-visual visual-meeting">
+                        <span>MEETING<br>WORKSPACE</span>
+                        <small>Creator + JavaScript</small>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-type">Business application · Ongoing development</p>
+                        <h3>Synprosoft Meeting Club</h3>
+                        <p class="project-summary">A meeting-management workspace for tracking meeting details, member participation and meeting roles. Zoho Creator acts as the data layer while a JavaScript widget provides the user interface.</p>
+                        <h4 class="what-i-did">What I did</h4>
+                        <ul class="project-points">
+                            <li>Built separate modules for Timer, Ah Counter, Grammarian, Meeting and Meeting Participation.</li>
+                            <li>Created Creator forms and reports to manage meeting, member and role data.</li>
+                            <li>Connected the JavaScript widget to Creator data for the user interface.</li>
+                            <li>Set up automated appreciation and reminder workflows.</li>
+                        </ul>
+                        <div class="chips"><span>Zoho Creator</span><span>Deluge</span><span>JavaScript</span><span>HTML/CSS</span><span>APIs</span></div>
+                    </div>
+                </article>
 
-/* -----------portfolio--------- */
+                <article class="project-card">
+                    <div class="project-visual visual-unicore">
+                        <span>UNICORE</span>
+                        <small>Sales Management</small>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-type">Business application · In development</p>
+                        <h3>UniCore — Sales Management</h3>
+                        <p class="project-summary">A unified sales-operations application built in Zoho Creator, focused on structured records and invoice workflows rather than duplicating inventory or accounting systems.</p>
+                        <h4 class="what-i-did">What I did</h4>
+                        <ul class="project-points">
+                            <li>Designed modules for Store Details, BDM Details, Products, Proforma Invoice and Tax Invoice.</li>
+                            <li>Built dashboard summaries, quick actions and invoice approval statuses.</li>
+                            <li>Set up lookup-based invoice items.</li>
+                            <li>Wrote Deluge calculations for pricing and tax fields.</li>
+                        </ul>
+                        <div class="chips"><span>Zoho Creator</span><span>Deluge</span><span>Data Modelling</span><span>Workflows</span></div>
+                    </div>
+                </article>
 
-#portfolio{
-    padding: 50px 0;
-}
-.work-list{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-.work{
-    border-radius: 10px;
-    position: relative;
-    overflow:hidden;
-}
-.work img{
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-    transition:transform 0.5s;
-}
-.layer{
-    width: 100%;
-    height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #2f00da);
-    border-radius: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    font-size: 14px;
-    transition: height 0.5s;
-}
-.layer h3{
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-.layer a{
-    margin-top: 20px;
-    color: #0408ff;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
-    background: #fff;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    text-align: center;
-}
-.work:hover img{
-    transform:scale(1.1) ;
-}
-.work:hover .layer{
-    height: 100%;
-}
-.btn{
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid #0408ff;
-    padding: 12px 30px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: #fff;
-    transition: backround 0.5s;
-}
-.btn:hover{
-    background: #0408ff;
-    color: #fff;
-}
+                <article class="project-card">
+                    <div class="project-visual visual-cliq">
+                        <span>MEETING<br>REMINDERS</span>
+                        <small>Creator → Cliq</small>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-type">Integration · Working workflow</p>
+                        <h3>Speakers Club Reminder Bot</h3>
+                        <p class="project-summary">An automated meeting-reminder workflow connecting Zoho Creator meeting records with a Zoho Cliq channel through an incoming webhook.</p>
+                        <h4 class="what-i-did">What I did</h4>
+                        <ul class="project-points">
+                            <li>Configured a Creator form submission to trigger the reminder workflow.</li>
+                            <li>Set up a Cliq incoming webhook to post meeting updates to the club channel.</li>
+                            <li>Implemented the integration with Deluge <code>invokeurl</code> calls.</li>
+                        </ul>
+                        <div class="chips"><span>Zoho Creator</span><span>Zoho Cliq</span><span>Deluge</span><span>Webhooks</span><span>APIs</span></div>
+                    </div>
+                </article>
 
-/* ----------contact---------- */
+                <article class="project-card">
+                    <div class="project-visual visual-crm">
+                        <span>LEAD → DEAL</span>
+                        <small>CRM Automation</small>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-type">Learning project · Practice environment</p>
+                        <h3>Zoho CRM Lead Follow-up</h3>
+                        <p class="project-summary">A hands-on CRM exercise covering lead retrieval, record validation and preparing a follow-up or creating a related deal.</p>
+                        <h4 class="what-i-did">What I did</h4>
+                        <ul class="project-points">
+                            <li>Practised building a custom button and a Deluge function.</li>
+                            <li>Worked with CRM record IDs and <code>getRecordById</code>.</li>
+                            <li>Debugged API responses and record-retrieval behaviour.</li>
+                        </ul>
+                        <div class="chips"><span>Zoho CRM</span><span>Deluge</span><span>API</span><span>Debugging</span></div>
+                    </div>
+                </article>
 
-.contact-left{
-    flex-basis: 35%;
-}
-.contact-right{
-    flex-basis: 60%;
-}
-.contact-left p{
-    margin-top: 30px;
-}
-.contact-left p i{
-    color: #0408ff;
-    margin-right: 15px;
-    font-size: 25px;
-}
-.social-icon{
-    margin-top: 30px;
-}
-.social-icon a{
-     text-decoration: none;
-     font-size: 30px;
-     margin-right: 15px;
-     color: #ababab;
-     display: inline-block;
-     transition: color 0.5s;
-}
-.social-icon a:hover{
-    color: #0408ff;
-    transform: translate(-5px);
-}
-.btn.btn2{
-    display: inline-block;
-    background: #0408ff;
-}
-.contact-right form{
-    width: 100%;
-}
-form input, form textarea{
-    width: 100%;
-    border: 0;
-    outline: none;
-    background:#262626;
-    padding: 15px;
-    margin: 15px 0;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 6px;
+            </div>
+        </div>
+    </section>
 
-}
-form btn2{
-    padding: 14px;
-    font-size: 18px;
-    margin-top: 20px;
-    cursor: pointer;
-}
-.copyright{
-    width: 100%;
-    text-align: center;
-    padding: 25px 0;
-    color: #262626;
-    font-weight: 300;
-    margin: 20px;
-}
+    <!-- Direction -->
+    <section class="section learning-section">
+        <div class="container learning-inner">
+            <h2 class="section-title"><span class="num">05</span> What I'm building toward</h2>
+            <p>
+                My current focus is becoming a stronger full-stack developer: improving JavaScript and
+                backend fundamentals, understanding REST APIs and authentication, writing maintainable
+                code, and building applications that solve real operational problems.
+            </p>
+            <div class="learning-tags">
+                <span>Backend architecture</span><span>REST API design</span><span>Authentication</span>
+                <span>SQL &amp; data modelling</span><span>JavaScript</span><span>System integration</span>
+            </div>
+        </div>
+    </section>
 
-/* ----------CSS for small screen---------- */
+    <!-- Contact -->
+    <section class="section" id="contact">
+        <div class="container contact-grid">
+            <div>
+                <h2 class="section-title"><span class="num">06</span> Let's connect</h2>
+                <p class="contact-lead">Interested in application development, integrations or opportunities to build useful software? Feel free to reach out.</p>
+                <ul class="contact-list">
+                    <li><i class="fa-solid fa-envelope"></i> <a href="mailto:puniths1999@gmail.com">puniths1999@gmail.com</a></li>
+                    <li><i class="fa-solid fa-phone"></i> <a href="tel:+919591284693">+91 95912 84693</a></li>
+                </ul>
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/puneeth-s-357661172/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Puneeths17" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="PUNEETH-S-CV.pdf" download class="btn btn-primary">Download CV</a>
+            </div>
+            <form class="contact-form" name="submit-to-google-sheet">
+                <div class="field">
+                    <input type="text" name="Name" id="name" placeholder=" " required>
+                    <label for="name">Your name</label>
+                </div>
+                <div class="field">
+                    <input type="email" name="Email" id="email" placeholder=" " required>
+                    <label for="email">Your email</label>
+                </div>
+                <div class="field">
+                    <textarea name="Message" id="message" rows="5" placeholder=" " required></textarea>
+                    <label for="message">Your message</label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Send message</button>
+                <p id="msg" role="status" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+</main>
 
-nav .fa-solid{
-    display: none;
-}
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2026 Puneeth S. Built with HTML, CSS and JavaScript.</p>
+    </div>
+</footer>
 
-@media only screen and (max-width:600px) {
-    #header{
-        background-image: url(Mobile-bg.jpg);
-    }
-    .header-text{
-        margin-top: 100%;
-        font-size: 14px;
-    }
-    .header-text h1{
-        font-size: 30px;
-    }
-    na .fa-solid{
-        display: block;
-        font-size: 25px;
-    }
-    nav ul{
-        background: #0408ff;
-        position: fixed;
-        top: -200px;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 2;
-        transition: right 0.5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 25px;
-    }
-    nav ul .fa-solid{
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-    }
-    .sub-title{
-        font-size: 40px; 
-    }
-    .about-col-1, .about-col-2{
-        flex-basis: 100%;
-    }
-    .about-col-1{
-        margin-bottom: 30px;
-    }
-    .about-col-2{
-        margin-bottom: 14px;
-    }
-    .tab-links{
-        font-size: 16px;
-        margin: 20px;
-    }
-    .contact-left, .contact-right{
-        flex-basis: 100%;
-    }
-    .copyright{
-        flex-basis: 10px;
-    }
-}
-#msg{
-    color: #61b752;
-    margin-top: -40px;
-    display: block;
-}
+<script>
+    // Mobile navigation
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("open");
+        menuToggle.classList.toggle("active", isOpen);
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    navLinks.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+            navLinks.classList.remove("open");
+            menuToggle.classList.remove("active");
+            menuToggle.setAttribute("aria-expanded", "false");
+        });
+    });
+
+    // Header treatment after scrolling
+    const header = document.querySelector(".site-header");
+    window.addEventListener("scroll", () => {
+        header.classList.toggle("scrolled", window.scrollY > 40);
+    }, { passive: true });
+
+    // Contact form, existing Google Apps Script endpoint
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz7v07MmFInELkQ9sPDXHs0Grwu9DhpLnwVCngiB7PJ_Tfrdomr0Oxf2k8kxKI82shh/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', async event => {
+        event.preventDefault();
+        const submitButton = form.querySelector('button[type="submit"]');
+        submitButton.disabled = true;
+        submitButton.textContent = "Sending...";
+        msg.textContent = "";
+
+        try {
+            const response = await fetch(scriptURL, { method: 'POST', body: new FormData(form) });
+            if (!response.ok) throw new Error(`Request failed: ${response.status}`);
+            msg.textContent = "Thanks! Your message has been submitted.";
+            form.reset();
+        } catch (error) {
+            msg.textContent = "Something went wrong. Please try again.";
+            console.error("Contact form error:", error);
+        } finally {
+            submitButton.disabled = false;
+            submitButton.textContent = "Send message";
+        }
+    });
+</script>
+</body>
+</html>
